@@ -8,7 +8,6 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -57,6 +56,8 @@
 									<li><a href="#iWare" class="button">iWare</a></li>
 									<li><a href="#XPM" class="button">XPM 5</a></li>
 									<li><a href="#H2H" class="button">Home to Home</a></li>
+									<li><a href ="#MinecraftWorld" class="button">Minecraft Environment in 3js</a></li>
+									<li></li>
 									<li><a href="#sideprojects" class="button">To Side Projects</a></li>
 									<li><a href="#about" class="button">To Learn about me</a></li>
 								</ul>
@@ -96,7 +97,51 @@
 									<li><a href="#about" class="button">To Learn about me</a></li>
 								</ul>
 							</article>
-
+							<!-- <article id="SchoolProjects">
+								<h2 class="major">School Projects</h2>
+								<ul class="actions stacked">
+									<li><a href="#WebGLand3jsProjects" class="button">WebGL and 3js Projects</a></li> -->
+									<!-- <li><a href="#Multithreading" class="button">Multithreading</a></li>
+									<li><a href="#Data Structures and Algorithms" class="button">Data Structures and Algorithms</a></li>
+									<li><a href="#Computer Networks" class="button">Computer Networks</a></li>
+									<li><a href="#Database Design" class="button">Database Design</a></li>
+									<li><a href="#Haskell" class="button">Haskell</a></li> -->
+								</ul>
+							</article>
+							<!-- <article id="WebGLand3jsProjects">
+								<h2 class="major">WebGL and 3js Projects</h2>
+								<ul class="actions stacked">
+									<li><a href="#MinecraftWorld" class="button">Minecraft Environment in 3js</a></li>
+								</ul> -->
+								
+							</article>
+							<article id="MinecraftWorld">
+								<h2 class="major">Minecraft Environment in 3js</h2>
+								<p>This is the sample Minecraft World generated in 3js. I had to resize the canvas to a significantly smaller size so users could interact with the model on the website. The link for the 3js model in full aspect ratio is below. I have a full breakdown of the 3js model in the next page. I have also attached the Github Repository if you would like to look at the source code. </p>
+								<ul class="icons">
+									<li><a href="https://github.com/AbhinavPrasanna/SchoolProjects/tree/main/CSE160/MinecraftFigurein3js" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								</ul>
+								<ul class="actions stacked">
+									<li><a href="https://people.ucsc.edu/~aprasann/asgn5/" target="_blank" class="button">Full 3js Window</a></li>
+									<li><a href="#MinecraftWorldDesc" class="button">A breakdown of the world</a></li>
+									<li><a href="#WebGLand3jsProjects" class="button">Back to the WebGL and 3js Projects</a></li>
+									<li><a href="#Projects" class="button">Back to Projects</a></li>
+									<li><a href="#about" class="button">To Learn about me</a></li>
+								</ul>
+								<canvas id="Canvas"></canvas>
+							</article>
+							<article id="MinecraftWorldDesc">
+								<h2 class="major">A breakdown of the world</h2>
+								<p>In this world, there are more than 20 objects where 30+ of them are cubes, 4 objects are cylinders, and one object is an Icosahedron. The minecraft grass, diamond ,glowstone blocks, and four pillars were made by me in 3js using textures from the Minecraft game itself but built with 3-dimensional cubes in 3js. I incorporated interleaving when creating the little grass wall around the world when initializing every grass block if you look at the source code. The skybox is fully 3-dimensional with image assets found online but created through 3js. There are 4 light sources: a directional light so that shadows cast a certain way, a hemisphere light to cast a generic light on the map, a spotlight on specific characters that is rotated based on the camera, and directed cube light for the little glowstone blocks that show the glow at the bottom. There is fog on the map that is centered around the Icosahedron near the four pillars. The objects that are imported into the project are not OBJ objects but rather GLTF objects as they have a higher resolution texture imported from Unity where I imported a GLTF texture from the loaders website from Threejs. </p>
+								<ul class="actions stacked">
+									<li><a href="#MinecraftWorld" class="button">Back to the Minecraft World</a></li>
+									<li><a href="#WebGLand3jsProjects" class="button">Back to the WebGL and 3js Projects</a></li>
+									<li><a href="#Projects" class="button">Back to Projects</a></li>
+									<li><a href="#about" class="button">To Learn about me</a></li>
+								</ul>
+							</article>
+							
+						
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
@@ -170,6 +215,7 @@
 							</ul>
 						</article>
 
+	
 
 
 					</div>
@@ -190,6 +236,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="module" src="assets/js/3js.js"></script>
 
 	</body>
 </html>
